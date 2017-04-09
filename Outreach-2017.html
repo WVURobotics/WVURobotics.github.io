@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <!-- Site Properties -->
+  <title>Outreach</title>
+
+  <link rel="icon" href="imgs/flying_wv_logo.png">
+
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css">
+
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js"></script>
+
+  <script>
+  $(document)
+    .ready(function() {
+
+      // fix main menu to page on passing
+      $('.main.menu').visibility({
+        type: 'fixed'
+      });
+      $('.overlay').visibility({
+        type: 'fixed',
+        offset: 80
+      });
+
+      // lazy load images
+      $('.image').visibility({
+        type: 'image',
+        transition: 'vertical flip in',
+        duration: 500
+      });
+
+      // show dropdown on hover
+      $('.main.menu  .ui.dropdown').dropdown({
+        on: 'hover'
+      });
+
+      $('#wvu-home-button').on('click', function() {
+        window.location = 'http://wvurobotics.orgs.wvu.edu/'; // opens in current window
+        // window.open('http://wvurobotics.orgs.wvu.edu/'); // opens in new window
+      });
+
+      $('#dropdown-items .item').on('click', function() {
+        event.preventDefault();
+        console.log($(this).attr('href'));
+        window.location.hash = $(this).attr('href');
+      });
+
+      $('#outreach-logs').load('Outreach-Logs.htm');
+
+    })
+  ;
+  </script>
+
+  <style type="text/css">
+
+  body {
+    background-color: #FFFFFF;
+  }
+
+  .main.container {
+    margin-top: 2em;
+  }
+
+  .main.menu {
+    margin-top: 0;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    transition:
+      box-shadow 0.5s ease,
+      padding 0.5s ease
+    ;
+  }
+  .main.menu .item img.logo {
+    margin-right: 1.5em;
+  }
+
+  .main.menu.fixed {
+    background-color: #FFFFFF;
+    border: 1px solid #DDD;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .text.container .left.floated.image {
+    margin: 2em 2em 2em -4em;
+  }
+  .text.container .right.floated.image {
+    margin: 2em -4em 2em 2em;
+  }
+
+  .ui.footer.segment {
+    margin: 5em 0em 0em;
+    padding: 5em 0em;
+  }
+
+  /*******************/
+  .ui.container img {
+    max-width:500px;
+    max-height:500px;
+    width: auto;
+    height: auto;
+  }
+
+  .ui.container {
+    min-width: 80vw !important;
+  }
+
+  #thank-you-letters {
+    text-align: center;
+  }
+
+  #wvu-home-button:hover {
+    cursor: pointer;
+  }
+
+  .anchor {
+    display: block;
+    height: 50px;
+    margin-top: -50px !important;
+  }
+
+  </style>
+
+</head>
+<body>
+
+  <!-- Start Menu Bar -->
+  <div class="ui borderless main menu">
+    <div class="ui text container">
+      <div href="http://wvurobotics.orgs.wvu.edu/" id="wvu-home-button" class="header item">
+        <img class="logo" src="imgs/flying_wv_logo.png">
+        Home
+      </div>
+      <a href="#" class="ui right floated dropdown item">
+        Events <i class="dropdown icon"></i>
+        <div class="menu" id="dropdown-items">
+          <div class="item" href="#appoquinmink_school_visit">Appoquinmink</div>
+          <div class="item" href="#fll">FLL</div>
+          <div class="item" href="#gov_energy_summit">Governor's Energy Summit</div>
+          <div class="item" href="#mission_space_delaware">Mission Space Delaware</div>
+          <div class="item" href="#pumpkin_drop">Pumpkin Drop</div>
+          <div class="item" href="#stem_day_park">STEM Day in the Park</div>
+          <div class="item" href="#tekids">TEKids</div>
+          <div class="item" href="#transtech_energy_conf">TransTech Energy Conference</div>
+          <div class="item" href="#trunk_or_treat">Trunk or Treat</div>
+          <div class="item" href="#wheeling_school_visit">Wheeling School Visitation</div>
+          <div class="item" href="#thank_you_letters">Thank You Letters</div>
+          <div class="item" href="#decide_wvu_open_house">Decide WVU Open House</div>
+          <div class="item" href="#charleston_expo">Charleston Expo</div>
+          <div class="item" href="#launch_wellness">Launch into Wellness</div>
+          <div class="item" href="#space_day">Space Day</div>
+          <div class="item" href="#total_hours">Total Hours</div>
+        </div>
+      </a>
+    </div>
+  </div>
+  <!-- End Menu Bar -->
+
+  <!-- Start Outreach Links -->
+  <div class="ui main text container">
+    <h1 class="ui header">Outreach</h1>
+    <a href="#appoquinmink_school_visit">Appoquinmink School Visitation</a>
+    <br>
+    <a href="#fll">FLL</a>
+    <br>
+    <a href="#gov_energy_summit">Governor's Energy Summit</a>
+    <br>
+    <a href="#mission_space_delaware">Mission Space Delaware</a>
+    <br>
+    <a href="#pumpkin_drop">Pumpkin Drop</a>
+    <br>
+    <a href="#stem_day_park">STEM Day in the Park</a>
+    <br>
+    <a href="#tekids">TEKids</a>
+    <br>
+    <a href="#transtech_energy_conf">TransTech Energy Conference</a>
+    <br>
+    <a href="#trunk_or_treat">Trunk or Treat</a>
+    <br>
+    <a href="#wheeling_school_visit">Wheeling School Visitation</a>
+    <br>
+    <a href="#thank_you_letters">Thank You Letters</a>
+    <br>
+    <a href="#decide_wvu_open_house">Decide WVU Open House</a>
+    <br>
+    <a href="#charleston_expo">Charleston Expo</a>
+    <br>
+    <a href="#launch_wellness">Launch into Wellness</a>
+    <br>
+    <a href="#space_day">Space Day</a>
+    <br>
+    <a href="#total_hours">Total Hours</a>
+  </div>
+  <!-- End Outreach Links -->
+
+  <div class="ui text container">
+
+    <!-- Start Appoquinmink -->
+    <a class="anchor" id="appoquinmink_school_visit"></a>
+
+    <h2>Appoquinmink School Visitation</h2>
+
+    <div class="ui divider"></div>
+
+    <div class="ui medium images">
+      <img src="imgs/outreach/AppoquiniminkSchoolVisitation/Copy_of_Delaware_Class.jpg">
+      <img src="imgs/outreach/AppoquiniminkSchoolVisitation/IMG_5976.jpg">
+      <img src="imgs/outreach/AppoquiniminkSchoolVisitation/IMG_5977.jpg">
+      <img src="imgs/outreach/AppoquiniminkSchoolVisitation/IMG_5978.jpg">
+      <img src="imgs/outreach/AppoquiniminkSchoolVisitation/IMG_5979.jpg">
+      <img src="imgs/outreach/AppoquiniminkSchoolVisitation/IMG_5980.jpg">
+      <img src="imgs/outreach/AppoquiniminkSchoolVisitation/IMG_5981.jpg">
+      <img src="imgs/outreach/AppoquiniminkSchoolVisitation/IMG_5982.jpg">
+      <img src="imgs/outreach/AppoquiniminkSchoolVisitation/IMG_5987.jpg">
+      <img src="imgs/outreach/AppoquiniminkSchoolVisitation/IMG_5988.jpg">
+      <img src="imgs/outreach/AppoquiniminkSchoolVisitation/IMG_5989.jpg">
+      <img src="imgs/outreach/AppoquiniminkSchoolVisitation/IMG_5990.jpg">
+      <img src="imgs/outreach/AppoquiniminkSchoolVisitation/IMG_5991.jpg">
+      <img src="imgs/outreach/AppoquiniminkSchoolVisitation/IMG_5992.jpg">
+      <img src="imgs/outreach/AppoquiniminkSchoolVisitation/IMG_5993.jpg">
+      <img src="imgs/outreach/AppoquiniminkSchoolVisitation/IMG_5994.JPG">
+      <img src="imgs/outreach/AppoquiniminkSchoolVisitation/IMG_5996.JPG">
+      <img src="imgs/outreach/AppoquiniminkSchoolVisitation/IMG_5997.jpg">
+      <img src="imgs/outreach/AppoquiniminkSchoolVisitation/IMG_5999.jpg">
+      <img src="imgs/outreach/AppoquiniminkSchoolVisitation/IMG_6001.jpg">
+      <img src="imgs/outreach/AppoquiniminkSchoolVisitation/IMG_6002.jpg">
+    </div>
+    <!-- End Appoquinmink -->
+
+    <!-- Start FLL -->
+    <a class="anchor" id="fll"></a>
+
+    <h2>FLL</h2>
+    <div class="ui divider"></div>
+
+    <div class="ui medium images">
+      <img src="imgs/outreach/FLL/20161203_120903.jpg">
+      <img src="imgs/outreach/FLL/20161203_120905.jpg">
+      <img src="imgs/outreach/FLL/20161203_132151.jpg">
+      <img src="imgs/outreach/FLL/20161203_132155.jpg">
+      <img src="imgs/outreach/FLL/20161203_132157.jpg">
+      <img src="imgs/outreach/FLL/20161203_132159.jpg">
+      <img src="imgs/outreach/FLL/20161203_132211.jpg">
+      <img src="imgs/outreach/FLL/20161203_132212.jpg">
+      <img src="imgs/outreach/FLL/20161203_132214.jpg">
+      <img src="imgs/outreach/FLL/20161203_132217.jpg">
+      <img src="imgs/outreach/FLL/20161203_151753.jpg">
+      <img src="imgs/outreach/FLL/20161203_151757.jpg">
+      <img src="imgs/outreach/FLL/20161203_151803.jpg">
+      <img src="imgs/outreach/FLL/20161203_151811.jpg">
+      <img src="imgs/outreach/FLL/20161203_151814.jpg">
+      <img src="imgs/outreach/FLL/20161203_151817.jpg">
+      <img src="imgs/outreach/FLL/20161203_162042.jpg">
+      <img src="imgs/outreach/FLL/20161203_162045.jpg">
+      <img src="imgs/outreach/FLL/20161203_162047.jpg">
+      <img src="imgs/outreach/FLL/FLL1.png">
+      <img src="imgs/outreach/FLL/FLL2.png">
+      <img src="imgs/outreach/FLL/FLL3.png">
+      <img src="imgs/outreach/FLL/FLLMaryland.jpg">
+    </div>
+    <!-- End FLL -->
+
+    <!-- Start Gov's Energy Summit -->
+    <a class="anchor" id="gov_energy_summit"></a>
+
+    <h2>Governor's Energy Summit</h2>
+    <div class="ui divider"></div>
+
+    <div class="ui medium images">
+      <img src="imgs/outreach/GovernorsEnergySummit/20161006_195913.jpg">
+      <img src="imgs/outreach/GovernorsEnergySummit/20161006_195915.jpg">
+    </div>
+    <!-- End Gov's Energy Summit -->
+
+    <!-- Start Mission Space Delaware -->
+    <a class="anchor" id="mission_space_delaware"></a>
+
+    <h2>Space Grant</h2>
+    <div class="ui divider"></div>
+
+    <div class="ui medium images">
+      <img src="imgs/outreach/MissionSpaceDelaware/Delaware_Presentation.jpg">
+      <img src="imgs/outreach/MissionSpaceDelaware/IMG_5962.JPG">
+      <img src="imgs/outreach/MissionSpaceDelaware/IMG_5963.JPG">
+      <img src="imgs/outreach/MissionSpaceDelaware/IMG_5964.JPG">
+      <img src="imgs/outreach/MissionSpaceDelaware/IMG_5965.JPG">
+      <img src="imgs/outreach/MissionSpaceDelaware/IMG_5966.jpg">
+      <img src="imgs/outreach/MissionSpaceDelaware/IMG_5967.jpg">
+      <img src="imgs/outreach/MissionSpaceDelaware/IMG_5968.jpg">
+      <img src="imgs/outreach/MissionSpaceDelaware/IMG_5969.jpg">
+      <img src="imgs/outreach/MissionSpaceDelaware/IMG_5970.JPG">
+      <img src="imgs/outreach/MissionSpaceDelaware/IMG_5972.jpg">
+      <img src="imgs/outreach/MissionSpaceDelaware/IMG_5973.jpg">
+    </div>
+    <!-- Start Mission Space Delaware -->
+
+    <!-- Start Pumpkin Drop -->
+    <a class="anchor" id="pumpkin_drop"></a>
+
+    <h2>Pumpkin Drop</h2>
+    <div class="ui divider"></div>
+
+    <div class="ui medium images">
+      <img src="imgs/outreach/PumpkinDrop/14568003_1133841983372191_7323289165344644106_n.jpg">
+      <img src="imgs/outreach/PumpkinDrop/PumpkinDrop_Eric.png">
+    </div>
+    <!-- End Pumpkin Drop -->
+
+    <!-- Start STEM Day at the Park -->
+    <a class="anchor" id="stem_day_park"></a>
+
+    <h2>STEM Day in the Park</h2>
+    <div class="ui divider"></div>
+
+    <div class="ui medium images">
+      <img src="imgs/outreach/STEMDayAtThePark/20161006_100030.jpg">
+      <img src="imgs/outreach/STEMDayAtThePark/20161006_100035.jpg">
+      <img src="imgs/outreach/STEMDayAtThePark/20161006_100109.jpg">
+      <img src="imgs/outreach/STEMDayAtThePark/20161006_100117.jpg">
+      <img src="imgs/outreach/STEMDayAtThePark/20161006_100122.jpg">
+      <img src="imgs/outreach/STEMDayAtThePark/20161006_100203.jpg">
+      <img src="imgs/outreach/STEMDayAtThePark/20161006_104411.jpg">
+      <img src="imgs/outreach/STEMDayAtThePark/20161006_104415.jpg">
+    </div>
+    <!-- End STEM Day at the Park -->
+
+    <!-- Start TEKids -->
+    <a class="anchor" id="tekids"></a>
+
+    <h2>TEKids</h2>
+    <div class="ui divider"></div>
+
+    <div class="ui medium images">
+      <img src="imgs/outreach/TEKids/15327499_1481796035168133_8492442684402120082_n.jpg">
+      <img src="imgs/outreach/TEKids/TEKKidsTeacherTraining.jpg">
+    </div>
+    <!-- End TEKids -->
+
+    <!-- Start TransTech Energy Conference -->
+    <a class="anchor" id="transtech_energy_conf"></a>
+
+    <h2>TransTech Energy Conference</h2>
+    <div class="ui divider"></div>
+
+    <div class="ui medium images">
+      <img src="imgs/outreach/TransTechEnergyConference/14716134_1132380000185056_782973679722369502_n.jpg">
+    </div>
+    <!-- End TransTech Energy Conference -->
+
+    <!-- Start Trunk or Treat -->
+    <a class="anchor" id="trunk_or_treat"></a>
+
+    <h2>Trunk or Treat</h2>
+    <div class="ui divider"></div>
+
+    <div class="ui medium images">
+      <img src="imgs/outreach/TrunkOrTreat/14523148_1132266726863050_6144702562113505439_n.jpg">
+      <img src="imgs/outreach/TrunkOrTreat/14639743_1134075646682158_150911847397948557_n.jpg">
+      <img src="imgs/outreach/TrunkOrTreat/TrunkOrTreat_Bert.png">
+      <img src="imgs/outreach/TrunkOrTreat/TrunkOrTreat_Group.png">
+    </div>
+    <!-- End Trunk or Treat -->
+
+    <!-- Start Wheeling School Visitation -->
+    <a class="anchor" id="wheeling_school_visit"></a>
+
+    <h2>Wheeling School Visitation</h2>
+    <div class="ui divider"></div>
+
+    <div class="ui medium images">
+      <img src="imgs/outreach/WheelingSchoolVisitation/robot1.jpg">
+      <img src="imgs/outreach/WheelingSchoolVisitation/robot2.jpg">
+      <img src="imgs/outreach/WheelingSchoolVisitation/robot3.jpg">
+      <img src="imgs/outreach/WheelingSchoolVisitation/robot4.jpg">
+      <img src="imgs/outreach/WheelingSchoolVisitation/robot5.jpg">
+      <img src="imgs/outreach/WheelingSchoolVisitation/robot6.jpg">
+      <img src="imgs/outreach/WheelingSchoolVisitation/robot7.jpg">
+      <img src="imgs/outreach/WheelingSchoolVisitation/Wheeling.jpg">
+    </div>
+    <!-- End Wheeling School Visitation -->
+
+    <!-- Start Thank You Letters -->
+    <a class="anchor" id="thank_you_letters"></a>
+
+    <h2>Thank You Letters</h2>
+    <div class="ui divider"></div>
+
+    <div class="ui large images" id="thank-you-letters">
+      <img src="imgs/outreach/ThankYouLetters/TEKidsThankYouLetter.png">
+      <img src="imgs/outreach/ThankYouLetters/WoodsdaleElem.png">
+    </div>
+    <!-- End Thank You Letters -->
+
+    <!-- Start Decide WVU Open House -->
+    <a class="anchor" id="decide_wvu_open_house"></a>
+
+    <h2>Decide WVU Open House</h2>
+    <div class="ui divider"></div>
+
+    <h3 style="text-align:center;"><em>Coming Soon</em></h3>
+    <!-- End Decide WVU Open House  -->
+
+    <!-- Start Charleston Expo -->
+    <a class="anchor" id="charleston_expo"></a>
+
+    <h2>Charleston Expo</h2>
+    <div class="ui divider"></div>
+
+    <h3 style="text-align:center;"><em>Coming Soon</em></h3>
+    <!-- End Charleston Expo -->
+
+    <!-- Start Launch Wellness -->
+    <a class="anchor" id="launch_wellness"></a>
+
+    <h2>Launch into Wellness</h2>
+    <div class="ui divider"></div>
+
+    <h3 style="text-align:center;"><em>Coming Soon</em></h3>
+    <!-- End Launch Wellness -->
+
+    <!-- Start Space Day -->
+    <a class="anchor" id="space_day"></a>
+
+    <h2>Space Day</h2>
+    <div class="ui divider"></div>
+    <h3 style="text-align:center;"><em>Coming Soon</em></h3>
+    <!-- End Space Day -->
+
+    <!-- Start Total Hours -->
+    <a class="anchor" id="total_hours"></a>
+
+    <h2>Total Hours</h2>
+    <div class="ui divider"></div>
+
+    <h3>Summary</h3>
+    <p>
+      &emsp;<b>Total Events:</b> 69
+      <br>
+      &emsp;<b>Man Hours:</b> 770
+      <br>
+      &emsp;<b>Number Reached:</b> 17880
+    </p>
+
+    <div style="width:100%" id="outreach-logs"></div>
+    <!-- End Total Hours -->
+
+  </div>
+
+  <div class="ui inverted vertical footer segment">
+  </div>
+</body>
+
+</html>
